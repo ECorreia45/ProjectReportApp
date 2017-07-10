@@ -1,0 +1,16 @@
+@import "dashboard.css";
+
+#profile{width: 1024px; background-color: #fff; margin: 0 auto;  max-height: 100%; padding: 25px; overflow: scroll;
+    box-shadow: 0 0 10px #666;}
+#profile img{width: 25%; height: 250px; float: left; margin-right: 25px; margin-bottom: 2.5%;}
+#profile div{float: left; height: 250px; background-color: #f8f8f8; width: 72%; padding: 20px;}
+#profile div h2{margin-top: 0; font-size: 3em; text-transform: uppercase; color: #222; margin-bottom: 25px;
+    border-bottom: 2px solid #999;}
+#profile div p{font-family: MavenReg200; color: #999;}
+#profile p b{font-family: MavenReg300; color: #555;}
+#profile p a{text-decoration: none; color: inherit;}
+#profile p a:hover{color: #1b6d85;}
+#profile > p{ clear: both; font-family: MavenReg200;}
+#profile address a{display: inline-block; height: 40px; width: auto; background-color: #1b6d85; padding: 5px;
+    margin-right: 20px; text-decoration: none; color: #fff;}
+#profile h3{font-family: MavenReg300;}

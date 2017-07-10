@@ -1,0 +1,38 @@
+@font-face {  src: url('MavenProLight-100.otf');  font-family: MavenReg100;  }
+@font-face {  src: url('MavenProLight-200.otf');  font-family: MavenReg200;  }
+@font-face {  src: url('MavenProLight-300.otf');  font-family: MavenReg300;  }
+body{margin: 0; padding: 0; font-size: 16px; font-family: MavenReg100; font-weight: 100;}
+*{box-sizing: border-box;}
+.error{font-family: MavenReg300; color: #fff; background-color: #900; padding: 5px; font-weight: 300; font-size: .8em;
+    letter-spacing: 1px; display: none; margin: 0 2% 20px;}
+
+#top_bar h1, #top_bar > a, #top_bar div{ margin: 15px;}
+#top_bar{background: #333; position: absolute; top: 0; left: 0; width: 100%;
+    box-shadow: 0 1px 10px #333; z-index: 2;}
+#top_bar h1{ width: 80px; height: 35px; float: left;}
+#top_bar h1 + a{float: left;}
+#top_bar h1 a{display: block; height: 100%; background: url("../media/logo.svg") 0 0 no-repeat;
+    text-indent: 500%; overflow: hidden;}
+#top_bar > div{float: right}
+#top_bar > div div{display: none}
+#top_bar > a{height: 35px; display: block; width: 80px; text-decoration: none; color: #555;
+    font-family: MavenReg300; text-align: center; font-size: 1.2em;
+    border-left: 2px solid #222; padding: 5px 25px 0;}
+#top_bar > a:hover, #top_bar > div > button:hover{color: #777;}
+
+#top_bar > div{margin: 15px; height: 35px; position: relative;}
+#top_bar > div > button, #top_bar > div > a{height: 100%; display: inline-block; font-size: 1.2em; font-family: MavenReg300;
+    padding: 0 25px; background: none; border: none; border-right: 2px solid #222; color: #555; outline: none;}
+#top_bar > div > a{text-decoration: none;}
+#top_bar > div > button:active{transform: scale(.96)}
+#top_bar > div > div{display: none; position: absolute; right: 0; background-color: #222; padding: 20px;
+    margin: 0; bottom: -300px;}
+#top_bar > div > div a{display: block; text-decoration: none; padding: 5px 10px; margin-bottom: 5px; background-color: #333;
+    color: #eee; }
+#top_bar > div > div a:hover{background-color: #1b6d85;}
+main{position: absolute; width: 100vw; height: 100vh; top: 0; left: 0; padding: 7% 4% 3%; overflow: scroll;
+    background: -webkit-radial-gradient(#00b3ad, #00625f);
+    background: -moz-radial-gradient(#00b3ad, #00625f);
+    background: -o-radial-gradient(#00b3ad, #00625f);
+    background: radial-gradient(#00b3ad, #00625f);
+}

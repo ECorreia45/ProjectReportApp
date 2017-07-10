@@ -1,0 +1,20 @@
+@import "main.css";
+
+#login div{ width: 300px; background-color: rgba(216, 105, 11, 0.99); color: #222;
+    left: 50%; top: 50%; transform: translate(-50%, -95%); box-shadow: 0 -1px 10px #333; position: absolute;
+    padding: 25px;}
+#login div h2{text-shadow: -2px 2px 2px #333;}
+#login div form input:not([type="checkbox"]){height: 40px; width: 100%; padding: 10px; font-size: .9em; outline: none; color: #555;
+    letter-spacing: 1px;}
+#login div form input + a{display: block; font-size: .8em; text-decoration: none; margin-bottom: 12px; font-family: MavenReg300;
+    color: #444; padding: 3px 2px 3px 0; text-align: right;}
+#login div form input + a:hover{color: #111;}
+#login input[type="checkbox"]{height: 25px; width: 25px; border: none; margin: 0; text-align: center; float: left;}
+#login label{font-family: MavenReg300; height: 25px; display: inline-block; margin-bottom: 40px; padding-top: 5px;}
+#login div form button{display: block; clear: both; width: 70%; height: 40px; background-color: #222; border: none;
+    outline: none; margin-left: 30%; color: #eee; font-size: 1.4em; text-transform: uppercase; letter-spacing: 2px;}
+#login div form button:hover{background-color: #00625f;}
+
+@media screen and (max-width: 425px) {
+    #login div{transform: translate(-50%, -130vw); width: 90vw; }
+}

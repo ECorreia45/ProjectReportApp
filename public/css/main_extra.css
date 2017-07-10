@@ -1,0 +1,90 @@
+@import "main.css";
+
+#welcome_msg{background: rgba(30,30,30,.7); width: 40%; height: 280px; padding: 30px; color: #fff; margin-top: 80px;
+    background: -webkit-linear-gradient(-70deg, rgba(0,0,0,.0),  rgba(30,30,30,.7)); display: flex; display: -webkit-flex;
+    background: -moz-linear-gradient(-70deg, rgba(0,0,0,.0),  rgba(30,30,30,.7)); flex-direction: column; align-items: flex-end;
+    background: -o-linear-gradient(-70deg, rgba(0,0,0,.0),  rgba(30,30,30,.7)); float: right; clear: both;
+    background: linear-gradient(-70deg, rgba(30,30,30,.7), rgba(0,0,0,.0)); text-align: right}
+#welcome_msg h2{font-size: 2.5em; font-weight: 100; margin: 0; width: 90%;}
+#welcome_msg h2 > b{font-family: MavenReg200;}
+#welcome_msg a{background-color: #ff9715; height: 30px; width: 40%; border-radius: 3px; text-align: center; text-decoration: none;
+    color: #fff; letter-spacing: 1px; font-size: 1.2em; padding-top: 3px; margin-top: 20px;}
+#welcome_msg a:hover{background-color: #00625f;}
+
+#code{background: rgba(50, 50, 50, .9); padding: 10px 15px; position: absolute; width: 100%; bottom: 0; left: 0}
+#code:after{content: ""; display: block; clear: both;}
+#code > div > a{float: right; background: url("../media/login.svg") 0 0 no-repeat; height: 50px; width: 30px;
+    background-size: 200% 100%; display: block; border: 0; outline: none; padding: 0; text-indent: -500%; overflow: hidden;}
+#code > div > a:hover{background-position: 100% 0}
+#code > div > div{float: left; display: inline-block; }
+#code > div > div p{margin: 0 0 3px; font-size: .7em; color: #ddd; letter-spacing: 1px; font-weight: 100;}
+#code > div > div form{ background-color: #f2f2f2; height: 30px; width: 500px;}
+#code > div > div form input{ height: 100%; width: 92%; background-color: #f2f2f2; border: 0; font-size: 1.2em;
+    padding-left: 10px; font-weight: 300; outline: none; letter-spacing: 1px;}
+#code > div > div form button{height: 70%; width: 4%; background: url("../media/submit.svg") 0 center no-repeat; padding: 0;
+    background-size: 200% 100%; border: 0; text-indent: 500%; overflow: hidden; float: right; margin-right: 1%; outline: none;
+    margin-top: 1%;}
+#code > div > div form button:hover{background-position: 100% 100%;}
+
+#about{background: #008784; height: 500px;
+    background: -webkit-radial-gradient(#00b3ad, #00625f);
+    background: -moz-radial-gradient(#00b3ad, #00625f);
+    background: -o-radial-gradient(#00b3ad, #00625f);
+    background: radial-gradient(#00b3ad, #00625f);}
+#about h2{margin: 0; font-size: 3em; font-family: MavenReg300}
+#about p{font-size: 1.6em; color: #fff; font-weight: 100; padding-left: 5%}
+#about > div div{width: 50%; display: inline-block; float: right}
+#about > div div:first-of-type{padding-right: 5%; float: left; margin-top: 10%; padding-left: 20px}
+#about > div div:last-of-type{height: 100%; text-align: right; padding: 11% 0;}
+#about > div div a{width: 60%; height: 40px; background: #ff9715; display: block; margin: 0 0 15px 30%; text-align: right;
+    text-decoration: none; color: #fff; font-size: 1em; letter-spacing: 1px; text-transform: uppercase; padding-right: 20px;
+    padding-top: 10px; border-radius: 3px; box-shadow: 1px 1px 2px #222;
+    background: linear-gradient(0deg, #333, #555);}
+#about > div div a:hover{background: #222;}
+
+@media screen and (max-width: 1024px) {
+    #welcome_msg{width: 55%;}
+    #about{height: 400px;}
+}
+
+@media screen and (max-width: 768px){
+    #welcome_msg{ height: 180px; padding: 15px; margin-top: 5px; width: 90%;}
+    #welcome_msg h2{font-size: 2em;}
+    #welcome_msg a{ height: 20px; font-size: 1em; padding-top: 0;}
+    #code{padding: 8px 5px;}
+    #code > div > a{height: 40px; width: 25px; margin-top: 5px;}
+    #code > div > div p{ font-size: .6em; margin: 0 0 2px;}
+    #code > div > div form{height: 25px; width: 300px;}
+    #about{background: #008784; height: 350px;}
+    #about > div div{width: 100%;}
+    #about > div div:first-of-type{padding-right: 5%; margin-top: 5%; padding-left: 10px}
+    #about h2{font-size: 2em;}
+    #about p{font-size: 1.2em;  width: 80%}
+    #about > div div:last-of-type{height: 100%; text-align: right; padding: 2%;}
+    #about > div div a{float: right; width: 46%; margin: 0 0 25px 4%; font-size: .9em; padding-right: 10px;
+        height: 35px;}
+}
+
+@media screen and (max-width: 425px) {
+    header > div{position: relative; height: 100%}
+    #welcome_msg{position: absolute; width: 100vw; bottom: 65vw; height: 30vh; left: -2%;
+        align-items: flex-start; padding: 4vw 0 4vw 4vw; z-index: 3; background: none;}
+    #welcome_msg h2{text-align: left; font-size: 10vw; width: 80%;}
+    #welcome_msg a{width: 95%; margin-left: 5%; text-align: left; height: 8vw; padding: 1vw 3vw;
+        font-size: 5vw; border-radius: 0;}
+    #code{height: 56%; background: transparent url("../media/code_bg_1.svg") center bottom no-repeat;
+        background-size: cover; width: 100vw; padding: 0; z-index: 2;}
+    #code > div > a{height: 15vw; width: 60px; margin-top:0; margin-bottom: 3.4vw; position: absolute; bottom: 18vw;
+        right: 0;}
+    #code > div{position: relative; height: 100%;}
+    #code > div:after{content: ""; display: block; clear: both;}
+    #code > div > div{position: absolute; bottom: 8px; left: 0; width: 100%;}
+    #code > div > div form{height: 8.5vw; width: 100%;}
+    #code > div > div form button{width: 5.5%; margin-top: 1.3vw; height: 73%;}
+
+    #about{height: 100vh;}
+    #about h2{font-size: 12vw;}
+    #about p{font-size: 6vw;}
+    #about > div div:first-of-type{margin-bottom: 5vw;}
+    #about > div div a{float: none; width: 80%; margin: 0 0 4vw 15%; font-size: 4vw; padding-right: 10px;  height: 11vw;}
+}

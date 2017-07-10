@@ -1,0 +1,24 @@
+@import "dashboard.css";
+
+#addprojectform{width: 800px; margin: 0 auto; background-color: #ddd; padding: 25px; max-height: 100%; overflow: scroll;
+    box-shadow: 0 0 10px #666;}
+#addprojectform h2{background-color: #1b6d85; color: #fff; font-family: MavenReg300; padding: 10px;
+    text-transform: uppercase; margin-bottom: 35px; margin-top: 0;}
+#addprojectform form:after{content: ""; display: block; clear: both;}
+#addprojectform form input{height: 35px; border: 2px solid rgba(2, 66, 98, 0.3); padding: 0 0 0 8px; font-size: .9em;
+    letter-spacing: 1px; outline: none; margin: 0 2% 30px; float: left}
+#addprojectform form input:focus, #addprojectform form textarea:focus{border: 2px solid rgba(2, 66, 98, 0.8);}
+#addprojectform form input[type="text"]{width: 46%; }
+#addprojectform form input[type="date"]{width: 31%;}
+#addprojectform form input:nth-of-type(5){width: 61%;}
+#addprojectform form input[type="email"]{width: 96%;}
+#addprojectform form label{width: 80px; height: 80px; background-color: #aaa; float: left; margin: 0 2% 0;
+    display: flex; display: -webkit-flex; align-items: center; flex-direction: column; justify-content: center;
+    text-align: center; color: #fff; font-family: MavenReg300;}
+#addprojectform form label:hover{background-color: rgba(2, 66, 98, 0.8);}
+#addprojectform form input[type="file"]{display: none; }
+#addprojectform form textarea{width: 96%; float: left; border: 2px solid rgba(2, 66, 98, 0.3); outline: none;
+    margin: 0 2% 30px; height: 100px; padding: 8px; font-size: .9em; letter-spacing: 1px; resize: vertical; max-height: 300px;}
+#addprojectform form button{clear: both; float: right; margin: 30px 0 0 0; background-color: #1b6d85; border: none;
+    color: #fff; text-align: center; width: 200px; height: 35px; font-size: .9em; text-transform: uppercase;
+    letter-spacing: 1px;}

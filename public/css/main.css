@@ -1,0 +1,66 @@
+@font-face {  src: url('MavenProLight-100.otf');  font-family: MavenReg100;  }
+@font-face {  src: url('MavenProLight-200.otf');  font-family: MavenReg200;  }
+@font-face {  src: url('MavenProLight-300.otf');  font-family: MavenReg300;  }
+body{margin: 0; padding: 0; font-size: 16px; font-family: MavenReg100; font-weight: 100; position: relative;}
+*{box-sizing: border-box;}
+.wrapper{margin: 0 auto; width: 96%; max-width: 1200px; }
+.error{font-family: MavenReg300; color: #fff; background-color: #900; padding: 5px; font-weight: 300; font-size: .8em;
+    letter-spacing: 1px; display: none;}
+button:active{transform: scale(.96)}
+
+#login, #signup{position: relative; height: 200px;
+    background: -webkit-radial-gradient(200px 10% at center 75%, #333 1%, rgba(0, 98, 95, 0.96)  );
+    background: -moz-radial-gradient(200px 10% at center 75%, #333 1%, rgba(0, 98, 95, 0.96)  );
+    background: -o-radial-gradient(200px 10% at center 75%, #333 1%, rgba(0, 98, 95, 0.96)  );
+    background: radial-gradient(200px 10% at center 75%, #333 1%, rgba(0, 98, 95, 0.96)  );  }
+#login div h2, #signup div h2{font-family: MavenReg300; font-size: 3em; margin-top: 0; margin-bottom: 25px;}
+
+header{padding: 30px 0 0;position: relative; height: 500px;  background: #005553 url("../media/header-bg.jpg") center center no-repeat;
+    background-size: cover;  }
+header h1{margin: 0; display: inline-block;}
+header h1 img{height: 50px;}
+header .wrapper{position: relative;}
+#menu_btn{background: url("../media/menu.svg") 0 0 no-repeat; border: 0; outline: none; height: 35px; width: 50px;
+    display: block; text-indent: 500%; overflow: hidden; position: absolute; top: 0; right: 0; z-index: 8;
+    background-size: 200% 100%; padding: 0; cursor: pointer;}
+#menu_btn:active, .active_nav{background-position: 100% 0;}
+
+nav{position: absolute; top: 0; right: 0; width: 300px; background: rgba(0, 31, 28, 0.95); height: 100%; padding-top: 90px;
+    display: none; z-index: 5}
+nav ul{list-style: none; margin: 0; padding: 0;}
+nav ul li{height: 35px; width: 85%; margin: 0 auto 25px; border-bottom: 2px solid #00b3ad; }
+nav ul li a{display: block; height: 100%; text-decoration: none; font-size: 1.2em; padding: 6px 0 0 5px;  color: #ccc;}
+
+footer{background: #222; padding: 15px 0;}
+footer .wrapper:after{content: ""; display: block; clear: both;}
+footer ul{margin: 0; padding: 0; width: 50%; float: left;}
+footer ul li{display: inline-block; margin-right: 15px;}
+footer ul:last-of-type{text-align: right;}
+footer ul:last-of-type li:last-of-type{margin-right: 0;}
+footer ul li a, footer ul li{color: #666; text-decoration: none; text-transform: uppercase; letter-spacing: 1px;
+    font-size: .8em; font-family: MavenReg300}
+footer ul li a:hover{color: #888;}
+
+@media screen and (max-width: 1024px){
+    footer ul{margin: 0; padding: 0; width: auto; float: left; display: inline-block}
+    footer ul:last-of-type{float: right;}
+}
+
+@media screen and (max-width: 768px) {
+    header{height: 350px; padding: 10px 0 0;}
+    header h1 img{height: 40px;}
+    #menu_btn{height: 25px;}
+    footer ul{float: right; clear: both;}
+    footer ul:first-of-type{margin-bottom: 5px;}
+    footer ul li{margin-right: 0; margin-left: 15px; font-size: .7em; }
+    footer ul li a{font-size: .8em;}
+}
+@media screen and (max-width: 425px) {
+
+    #login, #signup{position: relative; height: 2px;}
+    header{height: 100vh}
+    nav{width: 60vw;}
+    footer ul li{font-size: 3vw; }
+    footer ul li a{font-size: 4vw;}
+}
+

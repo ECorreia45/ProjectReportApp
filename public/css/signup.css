@@ -1,0 +1,31 @@
+@import "main.css";
+
+noscript #signup{height: auto; padding: 50px 0;}
+noscript #signup div{width: 100%; position: static; transform: none;}
+noscript #signup form input{width: 46%; float: left; margin: 0 2% 20px;}
+noscript #signup form input:last-of-type{float: right;}
+#signup form label{float: left; margin: 0 2% 30px;}
+#signup form button{margin: 15px 2% 0; clear: both;}
+
+
+#signup div{ background: #222 url("../media/form_bg.svg") 0 0; background-size: 10px; padding: 25px;
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -95%); width: 500px; box-shadow: 0 -1px 10px #333;}
+#signup div h2{color: #fff; text-shadow: -3px 3px 2px #000;}
+#signup form{overflow: hidden;}
+#signup form fieldset{border: 0; width: 100%; display: none; padding: 0;}
+#signup form fieldset:first-of-type{display: block;}
+#signup form input{border: none; border-bottom: 2px solid #555; background: none; width: 100%; height: 40px;
+    padding: 10px; font-size: 1em; outline: none; color: #777; letter-spacing: 1px; margin-bottom: 20px;}
+#signup form input::-webkit-input-placeholder{color: #444;}
+#signup form input:-moz-placeholder{color: #444;}
+#signup form input:-ms-input-placeholder{color: #444;}
+#signup form label{width: 100px; height: 100px; display: block; background: url("../media/upload.svg") 0 0 no-repeat;}
+#signup form input[type="file"]{display: none;  }
+#signup form button{float: right; width: 30px; display: block; text-indent: 500%; overflow: hidden; border: none; outline: none;
+    height: 30px;  background: url("../media/submit.svg") 0 0 no-repeat; background-size: 200% 100%;}
+#signup form button:hover{background-position: 100% 0;}
+
+@media screen and (max-width: 425px) {
+    #signup div{width: 90vw; transform: translate(-50%, -130vw); height: 120vw;}
+    #signup div h2{margin-bottom: 20vw;}
+}
